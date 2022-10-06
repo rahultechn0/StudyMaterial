@@ -134,5 +134,70 @@ const arr1 = [2,4,6,8,10];
 
 // ****? Date ****
 
-const d = new Date(2022,07,08,09,05);
-console.log(d.toDateString());
+// const d = new Date(2022,07,08,09,05);
+// console.log(d.toDateString());
+
+// const students = ['Ram','Dev','Ajay','Abhay'];
+    // for(i=0;i<students.length; i++)
+    // {
+    //     console.log(students[i]);
+    // }
+
+    // for (const item of students) {
+    //     console.log(item);
+    // }
+// const person ={firstName:'Rohit',age:24,address:'msmd'}
+
+// for(value in person)
+// {
+//     console.log(person[value]);   
+// }
+
+var i=0;
+// while (i<10) {
+//     console.log(`the value of i is: ${i}`);
+//     i++;
+// }
+
+// do {
+//     console.log(`the value of i is: ${i}`);
+//     i++;
+// } while (i<5);
+
+//***** Set*******
+
+// const latters = new Set(['a','b','c','d']);
+// console.log(latters);
+
+// const latters = new Set();
+// latters.add('a');
+// latters.add('b');
+// latters.add('c');
+// latters.delete('c');
+// console.log(latters);
+// console.log(latters.size);
+
+// const mySet = new Set();
+// const mySet = new Set([1,2,6,8]);
+
+// for (const item of mySet) {
+//     console.log(item);
+// }
+//***** Map *******
+// const myMap = new Map([
+//     ['apples',100],
+//     ['mangos',200],
+//     ['bananas',300],
+// ]);
+// console.log(myMap.values());
+
+const myMap = new Map();
+
+myMap.set('apples',200);
+myMap.set('bananas',300);
+// console.log(myMap.get('apples'));
+// console.log(myMap.get('bananas'));
+
+// for (const iterator of myMap.entries()) {
+//     console.log(iterator);
+// }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cookies</title>
+</head>
+<body>
+  <!-- <button class="btn" onclick="setCookie()">Set</button>
+  <button class="btn" onclick="getCookie()">Get</button> -->
+
+  <button class="btn" onclick="counter()">Click</button>
+  <p id="demo"></p>
+</body>
+<!-- <script>
+    //set cookies
+   //document.cookie = "Username = john, expires = Thu, 01 Jan 1970 00:00:00 UTC";
+    function setCookie()
+    {
+        document.cookie = "Name = FirstCookie";
+    }
+
+    function getCookie()
+    {
+        if(document.cookie.length!=0)
+        {
+            alert(document.cookie);
+        }else{
+            alert('cookies not set');
+        }
+    }
+</script> -->
+<!-- <script>
+    //session
+       var val1= sessionStorage.setItem('name','javascript');
+       var sessionVal = sessionStorage.getItem('name');
+       console.log(sessionVal);
+       //sessionVal.clear();
+</script> -->
+<!-- <script>
+    localStorage.setItem('name','localStorage');
+    val = localStorage.getItem('name');
+    console.log(val);
+</script> -->
+
+<!-- <script>
+    counter();
+
+    function counter()
+    {
+        if(localStorage.clickcount)
+        {
+            localStorage.clickcount = Number(localStorage.clickcount)+1;
+        }else{
+            localStorage.clickcount = 1;
+        }
+        document.getElementById('demo').innerHTML = localStorage.clickcount;
+    }
+</script> -->
+</html>

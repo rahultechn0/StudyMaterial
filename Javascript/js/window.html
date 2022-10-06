@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>windows</title>
+</head>
+<body>
+    <button class="btn" onclick="myFunction()">Click</button>
+    <p id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit.nobis commodi facilis magni.</p>
+
+</body>
+<!-- <script>
+    //document.getElementById("demo").innerHTML = `window Height in  ${window.innerHeight}px and Width is ${window.innerWidth}`;
+    
+     function myFunction() {
+        window.open('https://www.google.com/');
+    }
+
+</script> -->
+<!-- <script>
+    fetch("content.txt")
+    .then((response) => response.text())
+    .then((data) =>console.log(data))
+    .catch((error)=>console.log("something error"));
+</script> -->
+<script>
+    fetch("https://jsonplaceholder.typicode.com/users")
+    .then((response) => response.json())
+    .then((data) =>console.log(data))
+    .catch((error)=>console.log("something error"));
+</script>
+</html>
