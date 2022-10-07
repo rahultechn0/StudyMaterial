@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+</head>
+<style>
+    .btn{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 139px;
+        height: 41px;
+    }
+</style>
+<body>
+    <button class="btn">Stop Changing!</button>
+</body>
+
+<script>
+    const body = document.body;
+    const button = document.querySelector("button");
+  const setIntervalId =  setInterval(()=>{
+    const red = Math.floor(Math.random()*126);
+    const green = Math.floor(Math.random()*126);
+    const blue = Math.floor(Math.random()*126);
+    const rgb = `rgb(${red},${green},${blue})`;
+   document.body.style.background = rgb;
+   },1000);
+button.addEventListener("click",()=>{
+    clearInterval(setIntervalId);
+    button.textContent = document.body.style.background;
+});
+</script>
+</html>
